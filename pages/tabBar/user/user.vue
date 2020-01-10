@@ -20,7 +20,7 @@
 					Recovery Station会员
 				</view>
 				<text class="e-m">Recovery Station</text>
-				<text class="e-b">开通会员</text>
+				<text class="e-b" @tap="navTo('/pages/user/vipsend')">开通会员</text>
 			</view>
 		</view>
 

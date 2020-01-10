@@ -146,7 +146,7 @@
 					cityCode: ""
 				},
 				cityPickerValue: [0, 0, 1],
-				numberleng: 0,
+				numberleng: "",
 				price: "",
 				contentname: '',
 				contentphone: '',

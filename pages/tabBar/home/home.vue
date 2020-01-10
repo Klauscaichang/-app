@@ -108,7 +108,7 @@
 			</view>
 		</view>
 
-		<!-- 底部分享弹窗 -->
+	
 		<uni-popup ref="showqiandao" type="center">
 			<view class="uni-pup">
 				<qian-daopop @closepop="closepop"></qian-daopop>
@@ -228,9 +228,9 @@
 				this.goodsList = await this.$api.json('goodsList');
 				this.tabBars = await this.$api.json('tabList');
 				this.productList = await this.$api.json('productList');
-				this.$nextTick(() => {
-					this.$refs.showqiandao.open();
-				})
+				// this.$nextTick(() => {
+				// 	this.$refs.showqiandao.open();
+				// })
 			},
 			closepop() {
 				this.$nextTick(() => {
