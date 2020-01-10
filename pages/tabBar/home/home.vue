@@ -172,7 +172,7 @@
 		},
 		onLoad() {
 			this.loadData();
-			// this.doGetLocation();
+			this.doGetLocation();
 		},
 		onPageScroll(e) {
 			//兼容iOS端下拉时顶部漂移
@@ -228,9 +228,9 @@
 				this.goodsList = await this.$api.json('goodsList');
 				this.tabBars = await this.$api.json('tabList');
 				this.productList = await this.$api.json('productList');
-				// this.$nextTick(() => {
-				// 	this.$refs.showqiandao.open();
-				// })
+				this.$nextTick(() => {
+					this.$refs.showqiandao.open();
+				})
 			},
 			closepop() {
 				this.$nextTick(() => {
